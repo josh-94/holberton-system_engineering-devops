@@ -2,13 +2,13 @@
 # Script that displays numbers from 1 to 100.
 for (( n=1; n<101; n++ ))
 do 
-	if (( n % 3 && n % 5 == 0 ))
+	if [[ $(( n%3 )) -eq 0 && $(( n%5 )) -eq 0 ]]
 	then
 		echo "FizzBuzz"
-	elif (( n % 3 == 0 ))
+	elif [[ $(( n%3 )) -eq 0 ]]
 	then
 		echo "Fizz"
-	elif ((  n %5 == 0 ))
+	elif [[ $(( n%5 )) -eq 0 ]]
 	then
 		echo "Buzz"
 	else
