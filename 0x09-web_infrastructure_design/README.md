@@ -7,20 +7,6 @@
     WEB INFRASTRUCTURE DESIGN
 </h2>
 
-<p align="center">
-    <a href="https://github.com/cristhian1107/printf/commits/main">
-        <img src="https://img.shields.io/github/last-commit/cristhian1107/holberton-system_engineering-devops.svg?style=flat-square&logo=github&logoColor=white" alt="GitHub last commit">
-    </a>
-    <a href="https://github.com/cristhian1107/printf/issues">
-    <img src="https://img.shields.io/github/issues-raw/cristhian1107/holberton-system_engineering-devops.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub issues">
-    </a>
-    <a href="https://github.com/cristhian1107/printf/pulls">
-    <img src="https://img.shields.io/github/issues-pr-raw/cristhian1107/holberton-system_engineering-devops.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub pull requests">
-    </a>
-</p>
-
 <h4 align="center">
     For this project, we are expected to look at these concepts:
 </h4>
