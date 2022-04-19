@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# Command line used to fix my server
 service apache2 start
 
