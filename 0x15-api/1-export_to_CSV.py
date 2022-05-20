@@ -18,7 +18,8 @@ def R_API():
         exit()
 
     # Python requets get method'''
-    todo = requests.get('https://jsonplaceholder.typicode.com/todos')
+    todo = requests.get('https://jsonplaceholder.typicode.com/todos?userId={}'
+                        .format(employee_id))
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(employee_id))
 
