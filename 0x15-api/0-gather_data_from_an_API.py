@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''Script that, using an REST API, for a given employee ID,
 returns information about his/her TODO list progress.'''
-import requests 
+import requests
 from sys import argv
 
 
@@ -17,7 +17,7 @@ def R_API():
         print('Index Error')
         exit()
 
-    #Python requets get method'''
+    # Python requets get method'''
     todo = requests.get('https://jsonplaceholder.typicode.com/todos')
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(employee_id))
