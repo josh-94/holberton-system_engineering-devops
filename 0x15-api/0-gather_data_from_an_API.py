@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 '''Script that, using an REST API, for a given employee ID,
 returns information about his/her TODO list progress.'''
-import requests
+import requests 
 from sys import argv
 
 
 def R_API():
-    '''Validate if argument has index and is an interger'''
+    # Validate if argument has index and is an interger
     try:
         employee_id = int(argv[1])
 
@@ -16,7 +16,8 @@ def R_API():
     except IndexError:
         print('Index Error')
         exit()
-    '''python requets get method'''
+
+    #Python requets get method'''
     todo = requests.get('https://jsonplaceholder.typicode.com/todos')
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(employee_id))
@@ -27,9 +28,9 @@ def R_API():
 
     tittles = []
     for list_ in todo.json():
-        if (list_.get('userId') == employee_id):
+        if list_.get('userId') == employee_id:
             total_task += 1
-            if (list_.get('completed') is True):
+            if (list_.get('completed')) is True:
                 tasks_done += 1
                 tittles.append(list_.get('title'))
 
