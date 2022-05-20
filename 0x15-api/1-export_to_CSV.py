@@ -33,7 +33,8 @@ def R_API():
         for data in todo.json():
             task_completed_s = data.get('completed')
             task_title = data.get('title')
-            writer.writerow([employee_id, user_name, task_completed_s, task_title])
+            writer.writerow([employee_id,
+                            user_name, task_completed_s, task_title])
 
 
 if __name__ == "__main__":
