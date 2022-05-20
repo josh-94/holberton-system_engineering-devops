@@ -2,13 +2,13 @@
 '''Script that, using an REST API, for a given employee ID,
 returns information about his/her TODO list progress.'''
 import requests
-import sys
+from sys import argv
 
 
 def R_API():
     '''Validate if argument has index and is an interger'''
     try:
-        employee_id = int(sys.argv[1])
+        employee_id = int(argv[1])
 
     except ValueError:
         print('Value Error')
