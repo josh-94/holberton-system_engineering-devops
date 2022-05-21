@@ -23,7 +23,6 @@ def R_API():
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(employeeID))
     user_name = user.json().get('username')
-    
     # Getting variables
     datafile = {}
     datafile[employeeID] = []
