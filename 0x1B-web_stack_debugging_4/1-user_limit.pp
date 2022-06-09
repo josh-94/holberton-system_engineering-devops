@@ -5,5 +5,5 @@ exec {'sed':
 }
 exec {'sed':
     command  => "sed -i 's/holberton soft nofile 4/holberton soft nofile 100/' /etc/security/limits.conf",
-   provider => shell
+    provider => shell
 }
